@@ -1,1 +1,167 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My hotel</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .dark {
+            background-color: darkblue;
+            color: beige;
+        }
+
+        .dark-header {
+            background: skyblue;
+            color: white;
+        }
+
+        .dark-card {
+            background: green;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <header id="header">
+        <nav class="navbar">
+            <h1 class="logo"> Hotel</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#Rooms">room</a></li>
+                <li><a href="#services">service</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+            <button onclick="toggleDark()">🌙 Dark Mode</button>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>welcom to our hotel</h2>
+            <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, officia. Quaerat possimus vero qui! Pariatur harum quae corporis necessitatibus sequi eligendi nam, tenetur quasi nulla voluptatibus veritatis rerum praesentium voluptatem.
+            </p>
+
+            <button class="hero-button">Book now</button>
+        </div>
+    </section>
+
+    <section class="room" id="Rooms">
+        <h2> our rooms</h2>
+        <div class="room-container">
+          <div class="room-card" id="room1">
+            <img src="../imgs/photo_2025-06-02_03-00-43 (2).jpg" alt="" class="card-img-top"> 
+            <h3> room1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="room-card" id="room2">
+            <img src="../imgs/photo_2025-06-02_03-00-43 (2).jpg" alt="" class="card-img-top"> 
+            <h3> room1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="room-card" id="room3">
+            <img src="../imgs/photo_2025-06-02_03-00-43 (2).jpg" alt="" class="card-img-top">
+            <h3> room1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="room-card" id="room4">
+            <img src="../imgs/photo_2025-06-02_03-00-43 (2).jpg" alt="" class="card-img-top">  
+            <h3> room1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="room-card" id="room5">
+            <img src="../imgs/photo_2025-06-02_03-00-43 (2).jpg" alt="" class="card-img-top"> 
+            <h3> room1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+        </div>
+    </section>
+    
+    <section class="services" id="services">
+        <div class="services-container">
+        <div class="service-card" id="service1">
+            <h3> service1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="services-container">
+        <div class="service-card" id="service2">
+            <h3> service1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="services-container">
+        <div class="service-card" id="service3">
+            <h3> service1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="services-container">
+        <div class="service-card" id="service4">
+            <h3> service1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="services-container">
+        <div class="service-card" id="service5">
+            <h3> service1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           <div class="services-container">
+        <div class="service-card" id="service6">
+            <h3> service1</h3>
+            <p>
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
+            </p>    
+           </div>  
+           </div>
+    </section>
+    <section class="contact" id="contact">
+<h2>contact us:</h2>
+<p>Email: hdjkdn@gmail.com</p>
+<p>phone: 0xxxxxxxxx</p>
+<p>location: amman</p>
+    </section>
+    <footer id="footer">
+        <p>2026 all right</p>
+    </footer>
+
+    <script>
+        function toggleDark() {
+            document.getElementById("body").classList.toggle("dark");
+            document.getElementById("header").classList.toggle("dark-header");
+            document.getElementById("footer").classList.toggle("dark-header");
+
+            document.getElementById("room1").classList.toggle("dark-card");
+            document.getElementById("room2").classList.toggle("dark-card");
+            document.getElementById("room3").classList.toggle("dark-card");
+            document.getElementById("room4").classList.toggle("dark-card");
+            document.getElementById("room5").classList.toggle("dark-card");
+
+            document.getElementById("service1").classList.toggle("dark-card");
+            document.getElementById("service2").classList.toggle("dark-card");
+            document.getElementById("service3").classList.toggle("dark-card");
+            document.getElementById("service4").classList.toggle("dark-card");
+            document.getElementById("service5").classList.toggle("dark-card");
+            document.getElementById("service6").classList.toggle("dark-card");
+        }
+    </script>
+</body>
+</html>
